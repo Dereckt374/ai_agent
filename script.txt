@@ -1,0 +1,18 @@
+ Here's how I built an AI that knows everything about Formula One.
+ So first I need to collect a few URLs containing up-to-date information about Formula One.
+ Next I'm going to write a function to loop through each of the URLs and scrape the contents of each web page.
+ And then I'm going to split the content into digestible chunks.
+ You'll see why later.
+ Now that all of the content has been scraped I need to convert the chunks of text into data that can be stored in a vector database.
+ Because this is what will allow us to search or update records to find the answer for something.
+ To do this I'm using one of OpenAI's embedding models to convert the sequences of text into a raise of numbers.
+ But you don't have to use OpenAI, there are a bunch of three alternatives.
+ With all of this data stored in the database we're now going to write some code to allow us to ask some questions about Formula One.
+ When a question is submitted we're going to first generate an embedding of the message and like we did previously.
+ Now using the vector database we can search for chunks of information that closely matched the wording of the question.
+ For example a query that contains who was the 2024 World Champion was searched for chunks which contained 2024 World Champion and anything similar.
+ So when the database returns similar documents we can then use this information as context to generate a response using any large language model.
+ Now let's give it a run to try it out.
+ And boom now you can create AI applications with up to date information.
+ If you want to break into tech follow for more.
+.
